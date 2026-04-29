@@ -1,3 +1,5 @@
+
+
 import Link from "next/link";
 import Image from "next/image";
 import { listPublicImages } from "@/lib/publicImages";
@@ -217,7 +219,6 @@ export default async function Home() {
           href={WHATSAPP_ADMISSION_URL}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => track("Admission_Click")}
           className="inline-flex items-center justify-center gap-2 
                      rounded-full bg-[#25D366] px-6 py-3 
                      text-sm font-semibold text-white 
@@ -234,7 +235,6 @@ export default async function Home() {
           href={WHATSAPP_JOB_URL}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => track("Job_Click")}
           className="inline-flex items-center justify-center gap-2 
                      rounded-full border border-[#25D366]/40 
                      bg-white px-6 py-3 
