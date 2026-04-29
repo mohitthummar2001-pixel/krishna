@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { TopHeader } from "@/components/TopHeader";
+import { Analytics } from "@vercel/analytics/react"; // ✅ ADD THIS
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -75,6 +77,8 @@ export default function RootLayout({
         {/* <TopHeader /> */}
         <Navbar />
         {children}
+                <Analytics />
+
       </body>
     </html>
   );

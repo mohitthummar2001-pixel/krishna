@@ -12,7 +12,7 @@ import {
 } from "@/lib/links";
 import Script from "next/script";
 import { MapEmbed } from "@/components/MapEmbed";
-
+import { track } from "@vercel/analytics";
 import { FaWhatsapp, FaInstagram, FaFacebook,FaYoutube } from "react-icons/fa";
 
 /* ---------------- SECTION TITLE ---------------- */
@@ -217,6 +217,7 @@ export default async function Home() {
           href={WHATSAPP_ADMISSION_URL}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => track("Admission_Click")}
           className="inline-flex items-center justify-center gap-2 
                      rounded-full bg-[#25D366] px-6 py-3 
                      text-sm font-semibold text-white 
@@ -233,6 +234,7 @@ export default async function Home() {
           href={WHATSAPP_JOB_URL}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => track("Job_Click")}
           className="inline-flex items-center justify-center gap-2 
                      rounded-full border border-[#25D366]/40 
                      bg-white px-6 py-3 

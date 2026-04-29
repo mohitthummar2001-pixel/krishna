@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { WHATSAPP_ADMISSION_URL } from "@/lib/links";
 import { FaWhatsapp } from "react-icons/fa";
+import { track } from "@vercel/analytics";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -81,6 +82,7 @@ export function Navbar() {
             href={WHATSAPP_ADMISSION_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => track("Admission_Click")}
             className="whatsapp-attention flex items-center gap-1.5 
                        h-10 px-7 
                        bg-[#25D366] text-white 
@@ -126,6 +128,7 @@ export function Navbar() {
             <Link
               href={WHATSAPP_ADMISSION_URL}
               target="_blank"
+              onClick={() => track("Admission_Click")}
               className="flex items-center justify-center gap-2 
                          mt-2 rounded-full 
                          bg-[#25D366] text-white 
