@@ -17,6 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.krishnaschools.com"),
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   title: "Best School in Jamnagar | Krishna School",
   description:
     "Krishna School in Khodiyar Colony, Jamnagar offers quality education from Std. 1 to 12 (Science & Commerce) in English & Gujarati medium with strong academics and holistic development.",
