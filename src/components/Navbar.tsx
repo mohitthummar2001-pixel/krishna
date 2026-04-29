@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { track } from "@vercel/analytics";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
+  { href: "#home", label: "Home" } ,
   { href: "#academics", label: "Academics" },
   { href: "#sports", label: "Sports" },
   { href: "#artCulture", label: "Art & Culture" },
