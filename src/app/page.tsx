@@ -172,7 +172,7 @@ export default async function Home() {
         <div className="max-w-6xl mx-auto px-4 pb-6">
           <SectionTitle
             title="Student Reviews"
-            description="What parents and students say."
+            description="What students say."
           />
         </div>
         <Gallery images={reviews} />
