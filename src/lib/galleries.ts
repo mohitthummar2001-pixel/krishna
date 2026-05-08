@@ -5,7 +5,8 @@ export type GalleryFolder =
   | "art"
   | "real-education"
   | "reviews"
-  | "results";
+  | "results"
+  | "boardResult2026";
 
 export type GalleryImage = {
   file: string;
@@ -26,6 +27,7 @@ export const galleries: GalleryMap = {
   "real-education": [],
   reviews: [],
   results: [],
+  boardResult2026: [],
 };
 
 export function getGallery(folder: GalleryFolder) {

@@ -8,7 +8,8 @@ export type GalleryFolder =
   | "art"
   | "real-education"
   | "reviews"
-  | "results";
+  | "results"
+  | "boardResult2026";
 
 export type PublicImage = {
   src: string;

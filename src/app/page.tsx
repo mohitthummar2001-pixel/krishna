@@ -82,6 +82,8 @@ export default async function Home() {
   const real = await listPublicImages("real-education");
   const reviews = await listPublicImages("reviews");
   const results = await listPublicImages("results");
+  const boardResult2026 = await listPublicImages("boardResult2026");
+
 
   return (
     <main className="flex-1">
@@ -180,8 +182,21 @@ export default async function Home() {
         <Gallery images={reviews} />
       </section>
 
-      {/* RESULTS */}
+
+
+      {/* RESULTS-2026 */}
       <section id="results" className="scroll-mt-24 pt-4">
+        <div className="max-w-6xl mx-auto px-4 pb-6">
+          <SectionTitle
+            title="Science & Commerce Board Results 2026."
+            description="Achieving 100% results in Science streams."
+          />
+        </div>
+        <Gallery images={boardResult2026} />
+      </section>
+
+      {/* RESULTS */}
+      <section id="" className="scroll-mt-24 pt-4">
         <div className="max-w-6xl mx-auto px-4 pb-6">
           <SectionTitle
             title="Board Results"
